@@ -1,0 +1,49 @@
+Quadratic Equation Root Finder
+========================================================
+author: James Sheldon
+date: 2016/June/18
+autosize: true
+
+First Slide
+========================================================
+
+Quadratic_Equation is a simple real root finder for quadratic expressions of the form $$a x^2 + b x + c$$ where
+
+- $a \in \mathbb{R}$ 
+- $b \in \mathbb{R}$ 
+- $c \in \mathbb{R}$
+
+Expression being solved
+========================================================
+
+We are finding the two real value solutions the equation $a x^2 + b x + c = 0$ as below. For example, when $a = 1$, $b = 4$ and $c = 4$ we get:
+
+
+```r
+c((-4+sqrt(4^2-4*1*4))/(2*1),(-4-sqrt(4^2-4*1*4))/(2*1))
+```
+
+```
+[1] -2 -2
+```
+
+Another Example
+========================================================
+
+when $a = 9$, $b = 18$ and $c = 4$ we get:
+
+
+```r
+c((-8+sqrt(18^2-4*9*4))/(2*9),(-8-sqrt(18^2-4*9*4))/(2*9))
+```
+
+```
+[1]  0.3009115 -1.1898004
+```
+
+Caveats
+========================================================
+
+- This application works only when the discriminant $$\sqrt{b^2-4 a c} \in \mathbb{R}$$
+- See it [here](https://jasheldo.shinyapps.io/Quadratic_Equation/)
+ 
